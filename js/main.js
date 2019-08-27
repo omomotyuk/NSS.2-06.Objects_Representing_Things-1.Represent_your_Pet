@@ -10,6 +10,22 @@
 let pet =  {
     name: "parrot",
     species: "bird",
-    nickname: "Kuzja",
-    age: 5
+    nickname: "Cockatoo",
+    age: 5,
+
+    flying: function fly ( where ) {
+        window.alert( this.name + " " + this.nickname + " is flying high in a " + where + "." );
+    },
+
+    playing: ( what ) => {
+        window.alert( this.name + " " + this.nickname + " is playing with a " + what + "." );
+    },
+
+    singing: ( what ) => {
+        window.alert( this.name + " " + this.nickname + " is singing a " + what + "." );
+    }
 }
+
+pet.flying( "sky" );
+pet.playing( "mirror" );
+pet.singing( "song" );
